@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free Live Session — How AI Can Save Your Business 10 Hours a Week | SkillHouseAI</title>
+<meta name="description" content="Join our free live Zoom session and learn how Indian businesses are using AI to save time, cut costs, and grow faster. 15 June 2026 · 11 AM IST · Free."/>
+<meta property="og:title" content="Free Live AI Session for Indian Businesses — SkillHouseAI"/>
+<meta property="og:description" content="Learn how AI can save your team 10 hours a week. Free live session on Zoom. Register now."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:#110800;
+  color:#FFFFFF;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+
+/* ── NAV ── */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 60px;
+  border-bottom:1px solid rgba(255,107,0,0.12);
+  position:relative;z-index:10;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-weight:800;font-size:1.2rem;
+  color:#fff;text-decoration:none;
+}
+.logo-mark{
+  width:32px;height:32px;background:#FF6B00;
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:0.72rem;font-weight:800;color:#110800;
+}
+.logo span{color:#FF6B00;}
+.nav-tag{
+  background:rgba(255,107,0,0.15);border:1px solid rgba(255,107,0,0.35);
+  color:#FF6B00;font-size:0.75rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  padding:6px 14px;border-radius:4px;
+}
+
+/* ── HERO ── */
+.hero{
+  position:relative;overflow:hidden;
+  min-height:calc(100vh - 76px);
+  display:flex;align-items:center;
+}
+
+/* Big circle on right — like the reference */
+.circle-dec{
+  position:absolute;
+  right:-160px;top:50%;transform:translateY(-50%);
+  width:600px;height:600px;border-radius:50%;
+  background:#FF6B00;
+  z-index:1;
+  overflow:hidden;
+}
+
+/* Circuit SVG inside the circle */
+.circuit-svg{
+  position:absolute;inset:0;width:100%;height:100%;
+  opacity:0.22;
+}
+
+/* Subtle top-left glow */
+.hero::before{
+  content:'';position:absolute;
+  top:-200px;left:-200px;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,107,0,0.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;z-index:2;
+  padding:60px 60px 60px;
+  max-width:680px;
+}
+
+/* Live badge */
+.live-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,107,0,0.15);border:1px solid rgba(255,107,0,0.4);
+  color:#FF6B00;font-size:0.72rem;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:7px 16px;border-radius:4px;margin-bottom:28px;
+  animation:fadeUp 0.5s ease forwards;
+}
+.live-dot{
+  width:7px;height:7px;border-radius:50%;background:#FF6B00;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.6);opacity:0.4;}}
+
+/* Headline */
+.hero h1{
+  font-size:clamp(2.4rem,5vw,4.4rem);
+  font-weight:800;letter-spacing:-2px;line-height:1.04;
+  margin-bottom:20px;
+  animation:fadeUp 0.5s 0.1s ease both;
+}
+.hero h1 .orange{color:#FF6B00;}
+.hero h1 .outline{
+  -webkit-text-stroke:2px rgba(255,255,255,0.4);
+  color:transparent;
+}
+
+.hero-sub{
+  font-size:1.05rem;color:rgba(255,255,255,0.6);
+  line-height:1.8;margin-bottom:32px;max-width:540px;
+  animation:fadeUp 0.5s 0.2s ease both;
+}
+.hero-sub strong{color:#fff;font-weight:700;}
+
+/* Bullet list */
+.topics{
+  list-style:none;display:flex;flex-direction:column;gap:12px;
+  margin-bottom:40px;
+  animation:fadeUp 0.5s 0.3s ease both;
+}
+.topics li{
+  display:flex;align-items:center;gap:12px;
+  font-size:0.95rem;color:rgba(255,255,255,0.85);font-weight:500;
+}
+.topics li::before{
+  content:'';width:8px;height:8px;border-radius:50%;
+  background:#FF6B00;flex-shrink:0;
+}
+
+/* CTA button */
+.cta-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#FF6B00;color:#110800;
+  padding:16px 36px;border-radius:6px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:800;font-size:1rem;letter-spacing:0.3px;
+  text-decoration:none;border:none;cursor:pointer;
+  transition:background 0.2s,transform 0.15s;
+  animation:fadeUp 0.5s 0.4s ease both;
+  box-shadow:0 8px 32px rgba(255,107,0,0.35);
+}
+.cta-btn:hover{background:#ff8533;transform:translateY(-2px);box-shadow:0 12px 40px rgba(255,107,0,0.45);}
+.cta-btn .arr{transition:transform 0.2s;}
+.cta-btn:hover .arr{transform:translateX(4px);}
+
+/* Event meta bar */
+.event-meta{
+  display:flex;align-items:center;gap:32px;flex-wrap:wrap;
+  margin-top:36px;padding-top:32px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  animation:fadeUp 0.5s 0.45s ease both;
+}
+.meta-item{
+  display:flex;align-items:center;gap:10px;
+  font-size:0.875rem;font-weight:600;color:rgba(255,255,255,0.75);
+}
+.meta-icon{
+  width:32px;height:32px;border-radius:8px;
+  background:rgba(255,107,0,0.15);border:1px solid rgba(255,107,0,0.25);
+  display:flex;align-items:center;justify-content:center;
+  color:#FF6B00;
+}
+.meta-label{color:rgba(255,255,255,0.4);font-size:0.7rem;font-weight:500;display:block;margin-bottom:1px;}
+.meta-val{font-size:0.9rem;font-weight:700;color:#fff;display:block;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── ABOUT STRIP ── */
+.about-strip{
+  background:rgba(255,107,0,0.07);
+  border-top:1px solid rgba(255,107,0,0.12);
+  border-bottom:1px solid rgba(255,107,0,0.12);
+  padding:40px 60px;
+}
+.about-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:32px;
+}
+.about-card{text-align:center;}
+.about-num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.4rem;font-weight:700;color:#FF6B00;line-height:1;margin-bottom:6px;
+}
+.about-lbl{font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.4;}
+
+/* ── WHAT YOU'LL LEARN ── */
+.learn-section{padding:80px 60px;max-width:1100px;margin:0 auto;}
+.section-tag{
+  font-size:0.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:#FF6B00;margin-bottom:14px;display:flex;align-items:center;gap:10px;
+}
+.section-tag::before{content:'';width:22px;height:2px;background:#FF6B00;}
+.section-h{
+  font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;letter-spacing:-1.5px;
+  color:#fff;margin-bottom:14px;line-height:1.1;
+}
+.section-h span{color:#FF6B00;}
+.section-sub{color:rgba(255,255,255,0.5);font-size:0.95rem;line-height:1.8;max-width:520px;margin-bottom:48px;}
+
+.learn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.learn-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:14px;padding:28px;
+  transition:border-color 0.3s,background 0.3s,transform 0.3s;
+}
+.learn-card:hover{border-color:rgba(255,107,0,0.4);background:rgba(255,107,0,0.07);transform:translateY(-4px);}
+.learn-card-num{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.2rem;font-weight:700;color:rgba(255,107,0,0.2);
+  line-height:1;margin-bottom:14px;
+}
+.learn-card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:8px;}
+.learn-card p{font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.7;}
+.learn-card p strong{color:rgba(255,255,255,0.8);font-weight:600;}
+
+/* ── REGISTER FORM ── */
+.register-section{
+  padding:80px 60px;
+  background:rgba(255,107,0,0.04);
+  border-top:1px solid rgba(255,107,0,0.1);
+}
+.register-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 460px;gap:80px;align-items:center;}
+
+.reg-left h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;
+  letter-spacing:-1.5px;color:#fff;margin-bottom:14px;line-height:1.1;
+}
+.reg-left h2 span{color:#FF6B00;}
+.reg-left p{color:rgba(255,255,255,0.5);font-size:0.95rem;line-height:1.8;margin-bottom:28px;}
+.trust-items{display:flex;flex-direction:column;gap:12px;}
+.trust-item{
+  display:flex;align-items:center;gap:10px;
+  font-size:0.875rem;color:rgba(255,255,255,0.65);
+}
+.trust-item::before{
+  content:'';width:18px;height:18px;border-radius:50%;
+  background:rgba(255,107,0,0.2);border:1px solid rgba(255,107,0,0.4);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 24 24' fill='none' stroke='%23FF6B00' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;
+  flex-shrink:0;
+}
+
+.reg-form{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.09);
+  border-radius:18px;padding:38px 34px;
+}
+.reg-form h3{font-size:1.35rem;font-weight:800;color:#fff;margin-bottom:6px;}
+.reg-form>p{font-size:0.82rem;color:rgba(255,255,255,0.4);margin-bottom:24px;}
+.fg{margin-bottom:14px;}
+.fg input,.fg select{
+  width:100%;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:9px;padding:13px 15px;
+  color:#fff;font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:0.875rem;outline:none;
+  transition:border-color 0.2s,background 0.2s;appearance:none;
+}
+.fg input:focus,.fg select:focus{border-color:#FF6B00;background:rgba(255,107,0,0.07);}
+.fg input::placeholder{color:rgba(255,255,255,0.3);}
+.fg select option{background:#1a0a00;color:#fff;}
+.reg-btn{
+  width:100%;background:#FF6B00;color:#110800;
+  padding:14px;border-radius:9px;border:none;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:800;font-size:0.95rem;cursor:pointer;
+  transition:background 0.2s,transform 0.15s;margin-top:6px;
+  box-shadow:0 6px 24px rgba(255,107,0,0.3);letter-spacing:0.2px;
+}
+.reg-btn:hover{background:#ff8533;transform:translateY(-2px);}
+.form-note{text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:14px;}
+
+/* ── WHO IS THIS FOR ── */
+.who-section{padding:80px 60px;max-width:1100px;margin:0 auto;}
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px;}
+.who-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:14px;padding:24px 20px;
+  transition:border-color 0.3s,transform 0.3s;
+}
+.who-card:hover{border-color:rgba(255,107,0,0.35);transform:translateY(-4px);}
+.who-icon{
+  width:40px;height:40px;border-radius:10px;
+  background:rgba(255,107,0,0.12);border:1px solid rgba(255,107,0,0.2);
+  display:flex;align-items:center;justify-content:center;
+  color:#FF6B00;margin-bottom:14px;
+}
+.who-card h3{font-size:0.95rem;font-weight:700;color:#fff;margin-bottom:8px;}
+.who-card p{font-size:0.8rem;color:rgba(255,255,255,0.45);line-height:1.65;}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid rgba(255,255,255,0.06);
+  padding:36px 60px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:20px;
+}
+footer p{font-size:0.8rem;color:rgba(255,255,255,0.3);}
+.foot-links{display:flex;gap:24px;}
+.foot-links a{color:rgba(255,255,255,0.3);text-decoration:none;font-size:0.8rem;transition:color 0.2s;}
+.foot-links a:hover{color:#FF6B00;}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.3s;}.d4{transition-delay:0.4s;}
+
+/* Float CTA */
+#float-cta{
+  position:fixed;bottom:24px;right:24px;z-index:900;
+  background:#FF6B00;color:#110800;
+  padding:12px 24px;border-radius:6px;
+  font-weight:800;font-size:0.85rem;
+  text-decoration:none;display:flex;align-items:center;gap:8px;
+  box-shadow:0 8px 32px rgba(255,107,0,0.4);
+  transform:translateY(80px);opacity:0;
+  transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s;
+}
+#float-cta.show{transform:translateY(0);opacity:1;}
+#float-cta:hover{background:#ff8533;}
+
+@media(max-width:900px){
+  nav{padding:16px 20px;}
+  .hero-content{padding:60px 20px 40px;}
+  .circle-dec{width:300px;height:300px;right:-80px;top:60px;transform:none;}
+  .about-strip,.learn-section,.who-section,.register-section{padding:60px 20px;}
+  .about-inner{grid-template-columns:1fr 1fr;}
+  .learn-grid{grid-template-columns:1fr;}
+  .register-inner{grid-template-columns:1fr;gap:40px;}
+  .who-grid{grid-template-columns:1fr 1fr;}
+  footer{padding:32px 20px;flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<a href="#register" id="float-cta">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  Register Free
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="./index.html" class="logo">
+    <div class="logo-mark">SH</div>
+    Skill<span>House</span>AI
+  </a>
+  <div class="nav-tag">Free Live Session</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- Decorative orange circle -->
+  <div class="circle-dec">
+    <svg class="circuit-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <!-- Circuit board line pattern -->
+      <g fill="none" stroke="#110800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Horizontal main lines -->
+        <line x1="60" y1="120" x2="220" y2="120"/>
+        <line x1="260" y1="120" x2="400" y2="120"/>
+        <line x1="440" y1="120" x2="560" y2="120"/>
+        <line x1="40" y1="220" x2="160" y2="220"/>
+        <line x1="200" y1="220" x2="360" y2="220"/>
+        <line x1="400" y1="220" x2="540" y2="220"/>
+        <line x1="60" y1="320" x2="180" y2="320"/>
+        <line x1="220" y1="320" x2="380" y2="320"/>
+        <line x1="420" y1="320" x2="560" y2="320"/>
+        <line x1="40" y1="420" x2="200" y2="420"/>
+        <line x1="240" y1="420" x2="420" y2="420"/>
+        <line x1="460" y1="420" x2="580" y2="420"/>
+        <line x1="60" y1="500" x2="240" y2="500"/>
+        <line x1="280" y1="500" x2="460" y2="500"/>
+        <!-- Vertical lines -->
+        <line x1="140" y1="60" x2="140" y2="180"/>
+        <line x1="140" y1="220" x2="140" y2="340"/>
+        <line x1="300" y1="80" x2="300" y2="200"/>
+        <line x1="300" y1="240" x2="300" y2="400"/>
+        <line x1="460" y1="60" x2="460" y2="200"/>
+        <line x1="460" y1="240" x2="460" y2="380"/>
+        <line x1="200" y1="360" x2="200" y2="480"/>
+        <line x1="380" y1="380" x2="380" y2="480"/>
+        <!-- Corner joints -->
+        <path d="M220 120 Q240 120 240 140 L240 180 Q240 200 260 200 L300 200"/>
+        <path d="M400 120 Q420 120 420 140 L420 180 Q420 200 440 200"/>
+        <path d="M160 220 Q180 220 180 240 L180 300 Q180 320 200 320"/>
+        <path d="M380 320 Q400 320 400 340 L400 380 Q400 400 420 400"/>
+        <!-- Nodes/pads -->
+        <circle cx="140" cy="120" r="5" fill="#110800"/>
+        <circle cx="300" cy="120" r="5" fill="#110800"/>
+        <circle cx="460" cy="120" r="5" fill="#110800"/>
+        <circle cx="140" cy="220" r="5" fill="#110800"/>
+        <circle cx="300" cy="220" r="5" fill="#110800"/>
+        <circle cx="460" cy="220" r="5" fill="#110800"/>
+        <circle cx="200" cy="320" r="5" fill="#110800"/>
+        <circle cx="380" cy="320" r="5" fill="#110800"/>
+        <circle cx="200" cy="420" r="5" fill="#110800"/>
+        <circle cx="380" cy="420" r="5" fill="#110800"/>
+        <!-- Large "AI" stylised -->
+        <g stroke-width="14" stroke-linecap="round" opacity="0.55">
+          <line x1="80" y1="430" x2="80" y2="540"/>
+          <line x1="80" y1="430" x2="135" y2="540"/>
+          <line x1="190" y1="430" x2="190" y2="540"/>
+          <line x1="96" y1="490" x2="174" y2="490"/>
+          <line x1="240" y1="430" x2="240" y2="540"/>
+          <line x1="240" y1="430" x2="310" y2="430"/>
+          <line x1="240" y1="485" x2="295" y2="485"/>
+          <line x1="240" y1="540" x2="310" y2="540"/>
+          <line x1="310" y1="430" x2="310" y2="540"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="live-badge"><span class="live-dot"></span> Free Live Webinar</div>
+    <h1>
+      AI is making businesses<br>
+      <span class="orange">10x more efficient.</span><br>
+      <span style="font-size:0.72em;color:rgba(255,255,255,0.65);font-weight:600;letter-spacing:-0.5px;">Does your team know how to use it?</span>
+    </h1>
+    <p class="hero-sub">
+      In this <strong>free 60-minute live session</strong>, we'll show you exactly how Indian businesses are using AI to save hours every day — with real examples, live demos, and a clear action plan you can start this week.
+    </p>
+
+    <ul class="topics">
+      <li>What AI actually is — and what it can realistically do for your business</li>
+      <li>Which tools your team should start using right now (most are free)</li>
+      <li>How to use AI for emails, reports, follow-ups, and daily tasks</li>
+      <li>Real examples from Indian businesses exactly like yours</li>
+      <li>How to get started this week — step by step</li>
+    </ul>
+
+    <a href="#register" class="cta-btn">
+      Register for Free
+      <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <div class="event-meta">
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <span class="meta-label">Date</span>
+          <span class="meta-val">15 June 2026</span>
+        </div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <span class="meta-label">Time</span>
+          <span class="meta-val">11:00 AM IST</span>
+        </div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.869v6.262a1 1 0 0 1-1.447.894L15 14M3 8.5A1.5 1.5 0 0 1 4.5 7h8A1.5 1.5 0 0 1 14 8.5v7A1.5 1.5 0 0 1 12.5 17h-8A1.5 1.5 0 0 1 3 15.5z"/></svg>
+        </div>
+        <div>
+          <span class="meta-label">Platform</span>
+          <span class="meta-val">Zoom (Free)</span>
+        </div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 8 14"/></svg>
+        </div>
+        <div>
+          <span class="meta-label">Duration</span>
+          <span class="meta-val">60 Minutes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="about-strip">
+  <div class="about-inner">
+    <div class="about-card reveal">
+      <div class="about-num">200+</div>
+      <div class="about-lbl">Professionals trained<br>across India</div>
+    </div>
+    <div class="about-card reveal d1">
+      <div class="about-num">10h+</div>
+      <div class="about-lbl">Saved per person<br>every week</div>
+    </div>
+    <div class="about-card reveal d2">
+      <div class="about-num">92%</div>
+      <div class="about-lbl">Still using AI actively<br>3 months later</div>
+    </div>
+    <div class="about-card reveal d3">
+      <div class="about-num">4.9★</div>
+      <div class="about-lbl">Average rating from<br>session participants</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT YOU'LL LEARN -->
+<section class="learn-section">
+  <div class="section-tag reveal">Session Agenda</div>
+  <h2 class="section-h reveal d1">What you'll walk away <span>knowing.</span></h2>
+  <p class="section-sub reveal d2">Every minute of this session is designed to give you something practical you can use immediately in your business.</p>
+  <div class="learn-grid">
+    <div class="learn-card reveal d1">
+      <div class="learn-card-num">01</div>
+      <h3>AI — Simply Explained</h3>
+      <p>No jargon. No tech talk. Just a <strong>clear, honest explanation</strong> of what AI can and can't do for a business like yours — in plain language.</p>
+    </div>
+    <div class="learn-card reveal d2">
+      <div class="learn-card-num">02</div>
+      <h3>The Tools You Need Right Now</h3>
+      <p>We'll show you the <strong>3–4 tools that matter most</strong> for Indian businesses and exactly how to start using them today, most of them for free.</p>
+    </div>
+    <div class="learn-card reveal d3">
+      <div class="learn-card-num">03</div>
+      <h3>Live Demos on Real Tasks</h3>
+      <p>We'll <strong>demo AI live</strong> on tasks like customer emails, monthly reports, and vendor follow-ups — so you can see the time saved in real time.</p>
+    </div>
+    <div class="learn-card reveal d1">
+      <div class="learn-card-num">04</div>
+      <h3>Indian Business Examples</h3>
+      <p>Real examples from <strong>manufacturing, trading, services, and retail businesses in India</strong> — companies just like yours, saving hours every day.</p>
+    </div>
+    <div class="learn-card reveal d2">
+      <div class="learn-card-num">05</div>
+      <h3>Your 7-Day Action Plan</h3>
+      <p>You'll leave with a <strong>clear, step-by-step plan</strong> for what to do in the next 7 days to start saving time with AI in your business.</p>
+    </div>
+    <div class="learn-card reveal d3">
+      <div class="learn-card-num">06</div>
+      <h3>Live Q&amp;A with Our Experts</h3>
+      <p>The last 15 minutes are for <strong>your questions</strong>. Ask anything about AI, your business, your team — our trainers will answer live.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR -->
+<section class="who-section">
+  <div class="section-tag reveal">Who Should Attend</div>
+  <h2 class="section-h reveal d1">This session is made <span>for you</span> if…</h2>
+  <div class="who-grid">
+    <div class="who-card reveal d1">
+      <div class="who-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+      <h3>Business Owners</h3>
+      <p>You run a business and want to understand how AI can actually help you grow, cut costs, and work less manually.</p>
+    </div>
+    <div class="who-card reveal d2">
+      <div class="who-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Team Managers</h3>
+      <p>You manage a team and want your people to work faster, smarter, and stop wasting hours on tasks AI can handle.</p>
+    </div>
+    <div class="who-card reveal d3">
+      <div class="who-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Sales &amp; Operations</h3>
+      <p>You spend too much time on follow-ups, reports, and documentation. AI can cut that by 70% — we'll show you exactly how.</p>
+    </div>
+    <div class="who-card reveal d4">
+      <div class="who-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <h3>AI-Curious Beginners</h3>
+      <p>You've heard about ChatGPT but have no idea where to start. This session is designed exactly for you — zero tech skills needed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER FORM -->
+<section class="register-section" id="register">
+  <div class="register-inner">
+    <div class="reg-left reveal">
+      <div class="section-tag">Register Now</div>
+      <h2>Seats are <span>limited.</span><br>Save yours today.</h2>
+      <p>This is a small, interactive session — not a webinar with 1000 people. We keep it small so every attendee gets value and can ask questions directly.</p>
+      <div class="trust-items">
+        <div class="trust-item">Completely free — no credit card, no catch</div>
+        <div class="trust-item">You'll get the Zoom link on email before the session</div>
+        <div class="trust-item">Can't make it live? Register and get the recording</div>
+        <div class="trust-item">Training in Hindi and English both</div>
+      </div>
+    </div>
+    <div class="reg-form reveal d2">
+      <h3>Reserve My Free Seat</h3>
+      <p>15 June 2026 · 11 AM IST · Zoom</p>
+      <div class="fg"><input type="text" placeholder="Your Full Name" autocomplete="name"/></div>
+      <div class="fg"><input type="email" placeholder="Email Address" autocomplete="email"/></div>
+      <div class="fg"><input type="tel" placeholder="WhatsApp Number" autocomplete="tel"/></div>
+      <div class="fg"><input type="text" placeholder="Company Name &amp; City"/></div>
+      <div class="fg">
+        <select aria-label="Your role">
+          <option value="" disabled selected>Your Role</option>
+          <option>Business Owner / Founder</option>
+          <option>Manager / Team Lead</option>
+          <option>Sales Professional</option>
+          <option>HR / Admin</option>
+          <option>Accounts / Finance</option>
+          <option>Operations</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="reg-btn" id="regBtn">Reserve My Free Seat →</button>
+      <p class="form-note">We'll send your Zoom link within 24 hours. No spam, ever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="./index.html" class="logo" style="color:#fff;text-decoration:none;font-weight:800;display:flex;align-items:center;gap:8px;">
+      <div class="logo-mark" style="width:26px;height:26px;font-size:0.6rem;">SH</div>
+      Skill<span style="color:#FF6B00;">House</span>AI
+    </a>
+    <p style="margin-top:8px;">© 2025 SkillHouseAI · AI Training for Indian Businesses</p>
+  </div>
+  <div class="foot-links">
+    <a href="./index.html">Main Website</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Contact Us</a>
+  </div>
+</footer>
+
+<script>
+// Floating CTA
+const fCta=document.getElementById('float-cta');
+window.addEventListener('scroll',()=>fCta.classList.toggle('show',scrollY>400));
+
+// Reveal
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Register button
+document.getElementById('regBtn').addEventListener('click',function(){
+  this.textContent='Seat Reserved! Check Your Email.';
+  this.style.background='#1a8a3a';
+  setTimeout(()=>{this.textContent='Reserve My Free Seat →';this.style.background='';},4000);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
